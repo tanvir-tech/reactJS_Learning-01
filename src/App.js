@@ -1,25 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import data from './data.json';
+import Card from './component/Card';
+import Card2 from './component/Card2';
+import ReactBootStrap from './component/ReactBootStrap';
+import State from './component/State';
+import OnChange from './component/OnChange';
+import State_By_FC from './component/State_By_FC';
+import Form from './component/form';
+import Toggle from './component/Toggle';
+
+
+
+
+let items = [];
+// for (let i = 0; i < data.length; i++) {
+//     items.push(<Card title={data[i].title} description={data[i].description} />)
+// }
+
+items = data.map((item,index)=><Card title={item.title} description={item.description} key={index} />);
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+    return <div>
+        {/* {items[0]}
+        <Card2 name="Tanvir" />
+        <ReactBootStrap />
+        <State />
+        <State_By_FC />
+        <OnChange />
+        <Form /> */}
+
+        <Toggle />
+
     </div>
-  );
 }
 
 export default App;
