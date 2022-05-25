@@ -7,6 +7,7 @@ import OnChange from './component/OnChange';
 import State_By_FC from './component/State_By_FC';
 import Form from './component/form';
 import Toggle from './component/Toggle';
+import FAQS from './faq/FAQS';
 
 
 
@@ -30,6 +31,7 @@ function App() {
         <Form /> */}
 
         <Toggle />
+        <FAQS />
 
     </div>
 }
