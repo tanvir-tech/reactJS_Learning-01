@@ -8,6 +8,8 @@ import State_By_FC from './component/State_By_FC';
 import Form from './component/form';
 import Toggle from './component/Toggle';
 import FAQS from './faq/FAQS';
+import UseEffect from './hook/UseEffect';
+import DataFetch from './hook/DataFetch';
 
 
 
@@ -30,8 +32,12 @@ function App() {
         <OnChange />
         <Form /> */}
 
-        <Toggle />
-        <FAQS />
+        {/* <Toggle />
+        <FAQS /> */}
+
+        {/* <UseEffect /> */}
+
+        <DataFetch />
 
     </div>
 }
