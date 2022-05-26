@@ -10,6 +10,7 @@ import Toggle from './component/Toggle';
 import FAQS from './faq/FAQS';
 import UseEffect from './hook/UseEffect';
 import DataFetch from './hook/DataFetch';
+import DataFetch2 from './hook/customHook/DataFetch2';
 
 
 
@@ -36,8 +37,8 @@ function App() {
         <FAQS /> */}
 
         {/* <UseEffect /> */}
-
-        <DataFetch />
+        {/* <DataFetch /> */}
+        <DataFetch2 />
 
     </div>
 }
